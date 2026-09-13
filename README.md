@@ -22,13 +22,21 @@ the file, which makes compression ratios look better than they are; every row re
 
 ## Setup
 
+Create a virtual environment in this folder and install the requirements into it:
+
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-For the BOA sweep on a GPU, install the PyTorch build that matches your CUDA version
-(see [pytorch.org](https://pytorch.org/get-started/locally/)). The default `mambav1` backbone
-also needs `mambapy` or `mamba_ssm`.
+Activate the environment (`source .venv/bin/activate`) in each new terminal before running the
+commands below; `deactivate` leaves it.
+
+For the BOA sweep on a GPU, install the PyTorch build that matches your CUDA version inside the
+venv (see [pytorch.org](https://pytorch.org/get-started/locally/)). The default `mambav1` backbone
+uses `mambapy` (in `requirements.txt`), or `mamba_ssm` if you install it.
 
 ## Running the classical sweep
 
@@ -99,6 +107,8 @@ If the output CSV already exists with different columns, the old file is renamed
 `…_old_<timestamp>.csv` rather than mixed with the new rows.
 
 ## Plotting
+
+With the venv active:
 
 ```bash
 jupyter notebook Plots.ipynb

@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Downloaded data and generated inputs / artifacts from the scripts
+data/
+artifacts/
+boa-constrictor/
+
+# Model checkpoints written by the Learning Guide
+*.pt
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

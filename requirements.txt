@@ -6,6 +6,10 @@ numpy
 
 # BOA sweep (boa_energy_sweep.py) — install the CUDA build of torch that matches your GPU
 torch
+minGRU-pytorch
+pybind11
+mambapy==1.2.0
+constriction==0.4.1
 
 # Notebooks (Plots.ipynb, CodeCarbon_Learning_Guide.ipynb)
 matplotlib
