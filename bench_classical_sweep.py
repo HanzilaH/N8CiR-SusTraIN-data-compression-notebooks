@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Input-size sweep for the classical codecs (LZMA, ZSTD) — CPU + RAM only. Output: one CSV.
 
-Mirrors scripts/boa_energy_sweep.py: same input sizes, same repeat-the-CMS-file inputs, same
+Mirrors boa_energy_sweep.py: same input sizes, same repeat-the-CMS-file inputs, same
 CodeCarbon setup, comparable columns — so the two CSVs can be plotted together.
 
     python bench_classical_sweep.py                  # downloads the CMS file on first run

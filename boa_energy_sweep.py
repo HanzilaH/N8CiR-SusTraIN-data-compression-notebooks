@@ -59,7 +59,7 @@ VOCAB, SPLIT = 256, 0.8
 os.environ["BOA_GPU_STREAMS"] = str(args.gpu_streams)
 
 # --- repo + paths -----------------------------------------------------------------------------
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 DATA_DIR, RESULTS_DIR, ART_DIR = ROOT / "data", ROOT / "results", ROOT / "artifacts"
 for d in (DATA_DIR, RESULTS_DIR, ART_DIR):
     d.mkdir(parents=True, exist_ok=True)

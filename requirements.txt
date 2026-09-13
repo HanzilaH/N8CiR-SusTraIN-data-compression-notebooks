@@ -1,0 +1,12 @@
+# Classical sweep (bench_classical_sweep.py)
+codecarbon>=3.2
+zstandard
+pandas
+numpy
+
+# BOA sweep (boa_energy_sweep.py) — install the CUDA build of torch that matches your GPU
+torch
+
+# Notebooks (Plots.ipynb, CodeCarbon_Learning_Guide.ipynb)
+matplotlib
+jupyter
