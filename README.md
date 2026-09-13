@@ -107,3 +107,8 @@ jupyter notebook Plots.ipynb
 The notebook reads the CSVs in `results/`. Note that `boa_energy_sweep_v100x4.csv` came from
 an earlier multi-GPU version of the BOA script and has two extra columns (`codec_gpus`,
 `worker_max_s`).
+
+
+## Generative AI Disclosure
+
+See [AI_DISCLOSURE.md](AI_DISCLOSURE.md) for the authors' declaration regarding the use of generative AI.
