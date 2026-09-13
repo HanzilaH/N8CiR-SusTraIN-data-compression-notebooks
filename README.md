@@ -5,6 +5,8 @@ Measures the energy use and carbon footprint of compressing CMS detector data wi
 and compares it with classical codecs (ZSTD, LZMA). Energy and emissions are measured with
 [CodeCarbon](https://codecarbon.io).
 
+Presentation: [Boa internship talk.pdf](Boa%20internship%20talk.pdf)
+
 ## Contents
 
 | Path | What it is |
@@ -19,6 +21,16 @@ Both scripts use the same input: `CMS_DATA_float32.bin` (~50 MB), downloaded aut
 The sweep sizes are 10, 25, 50, 100, 250, 500 and 1000 MB. Inputs larger than 50 MB repeat
 the file, which makes compression ratios look better than they are; every row records
 `source_repeats` so you can tell which ones.
+
+## The learning guide
+
+If you are new to the project, start with [CodeCarbon_Learning_Guide.ipynb](CodeCarbon_Learning_Guide.ipynb).
+It explains how CodeCarbon estimates energy and emissions, then measures BOA training and
+compression on a slice of the CMS data.
+
+The notebook is self-contained: its own cells install the packages, find or clone the BOA repo
+and download the data, so it runs locally or on Google Colab without the setup below. The
+setup below is for running the sweep scripts.
 
 ## Setup
 
